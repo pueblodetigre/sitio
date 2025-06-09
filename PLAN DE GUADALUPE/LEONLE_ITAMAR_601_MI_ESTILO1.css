@@ -1,0 +1,97 @@
+@charset "utf-8";
+/* CSS Document */
+
+p{
+	font-family:"Comic Sans MS", cursive;
+	font-size:14px;
+	color: #000000;
+	line-height:18px;
+	padding:5px;
+	}
+	
+.negritas {
+	font-family: "Comic Sans MS", sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: bold;
+	color: #000000;
+}
+.navegacion{
+	font-family:  "Comic Sans MS", sans-serif;
+	font-size: 18px;
+	color: #D8BFD8;
+	font-style: normal;
+	font-weight: bold;
+	text-decoration: none;
+	background-color: #DA70D6;
+	display: block;
+	padding: 8px;
+	width: 140px;
+}
+.navegacion:hover{
+	font-family:  "Comic Sans MS", sans-serif;
+	font-size: 20px;
+	color: #DA70D6 ;
+	font-style: normal;
+	font-weight: bold;
+	text-decoration: none;
+	background-color: #D8BFD8;
+	display: block;
+	padding: 8px;
+	width: 140px;
+}
+h1{
+	text-align: center;
+}
+.carrusel{
+	display: flex;
+	grid-gap: 10px;
+	justify-content: center;
+	max-width: 1500px;
+	scroll-behavior: smooth;
+}
+.carrusel ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	max-width: 1000px;
+}
+.carrusel-fotos{
+	display: flex;
+	grid-gap: 10px;
+	overflow: auto;
+
+}
+.carrusel-fotos img{
+	background: black;
+	border: 4px solid black;
+	width: 300px;
+	height: 200px;
+	object-fit: contain;
+}
+.carrusel-menu {
+	display: none;
+}
+@media screen and (min-width: 500px){
+	.carrusel-fotos{
+		overflow: hidden;
+
+	}
+	.carrusel-fotos img{
+		width: 500px;
+		height: 400px;
+	}
+	.carrusel-menu{
+		display: block;
+
+	}
+	.carrusel-menu img {
+		box-sizing: border-box;
+		width: 50px;
+		height: 40px;
+		border: 5px solid black;
+	}
+	.carrusel-menu img:hover {
+		border: none;
+ 	}
+}
